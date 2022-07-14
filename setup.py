@@ -3,6 +3,7 @@ from setuptools import find_packages, setup
 
 install_requires = (
     'aiohttp==3.8.1',
+    'aiohttp-basicauth==1.0.0',
     'aiosignal==1.2.0',
     'async-timeout==4.0.2',
     'attrs==21.4.0',
