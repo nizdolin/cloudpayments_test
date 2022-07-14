@@ -1,0 +1,43 @@
+# https://developers.cloudpayments.ru/#spisok-valyut
+CURRENCIES = (
+    'RUB',
+    'EUR',
+    'USD',
+    'GBP',
+    'UAH',
+    'BYN',
+    'KZT',
+    'AZN',
+    'CHF',
+    'CZK',
+    'CAD',
+    'PLN',
+    'SEK',
+    'TRY',
+    'CNY',
+    'INR',
+    'BRL',
+    'ZAR',
+    'UZS',
+    'BGN',
+    'RON',
+    'AUD',
+    'HKD',
+    'GEL',
+    'KGS',
+    'AMD',
+    'AED',
+)
+
+# https://developers.cloudpayments.ru/#lokalizatsiya
+CULTURE_NAMES = (
+    'ru-RU',
+    'en-US',
+    'lv',
+    'az',
+    'kk',
+    'uk',
+    'pl',
+    'vi',
+    'tr',
+)
