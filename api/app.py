@@ -9,9 +9,6 @@ from api.middlewares import validation_middleware
 
 def init_app() -> web.Application:
     # https://developers.cloudpayments.ru/#autentifikatsiya-zaprosov
-    print(os.environ.get('PUBLIC_ID'))
-    print(os.environ.get('PUBLIC_ID'))
-    print(os.environ.get('PUBLIC_ID'))
     auth_middleware = BasicAuthMiddleware(
         username=os.environ.get('PUBLIC_ID'),
         password=os.environ.get('API_SECRET'),
