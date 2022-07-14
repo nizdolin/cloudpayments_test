@@ -17,7 +17,8 @@ async def charge_payment(request):
     url = cloudpayments_client.endpoint_url('payments/cards/charge')
 
     try:
-        response_data = await cloudpayments_client.post('charge', url, json=data)
+        headers = {'Authorization': request.headers['Authorization']}
+        response_data = await cloudpayments_client.post('charge', url, json=data, headers=headers)
     except InteractionResponseError as e:
         return json_response(dict(success=False, error=dict(message=e.message)), status=400)
 
